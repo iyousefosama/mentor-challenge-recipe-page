@@ -58,14 +58,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+  
+  .recipe-card img {
+    @apply w-full md:rounded-lg block md:pt-6 md:px-8;
+  }
+  
   .recipe-card-content {
     @apply p-4 px-8;
   }
-
-  .recipe-card img {
-    @apply w-full md:rounded-lg md:pt-6 md:px-8;
-  }
-
   .info-box {
     background-color: var(--color-Rose-50);
     @apply p-6;
