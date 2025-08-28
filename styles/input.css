@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-White: hsl(0, 0%, 100%);
+  --color-Stone-100: hsl(30, 54%, 90%);
+  --color-Stone-150: hsl(30, 18%, 87%);
+  --color-Stone-600: hsl(30, 10%, 34%);
+  --color-Stone-900: hsl(24, 5%, 18%);
+  --color-Brown-800: hsl(14, 45%, 36%);
+  --color-Rose-800: hsl(332, 51%, 32%);
+  --color-Rose-50: hsl(330, 100%, 98%);
+
+  /* Fonts */
+  --font-outfit: "Outfit";
+  --font-young-serif: "Young Serif";
+}
+
+@layer base {
+  body {
+    background-color: var(--color-Stone-100);
+  }
+
+  h1 {
+    @apply text-Stone-900 font-young-serif text-4xl font-normal;
+  }
+
+  h3 {
+    @apply text-Brown-800 font-young-serif text-2xl mb-4;
+  }
+
+  p {
+    @apply text-Stone-600 font-outfit font-normal;
+  }
+
+  tr {
+    @apply border-b border-Stone-150;
+  }
+
+  td {
+    @apply w-full pl-8 py-4 border-collapse mx-auto font-outfit text-Stone-900;
+  }
+
+  td:last-child {
+    @apply text-Brown-800 pr-28 md:pr-56 font-semibold;
+  }
+}
+
+@layer components {
+  .section-spacing {
+    @apply mt-8;
+  }
+
+  .recipe-card {
+    background-color: var(--color-White);
+    @apply mx-auto w-full md:max-w-2xl md:mt-4 md:rounded-lg;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .recipe-card-content {
+    @apply p-4 px-8;
+  }
+
+  .recipe-card img {
+    @apply w-full md:rounded-lg md:pt-6 md:px-8;
+  }
+
+  .info-box {
+    background-color: var(--color-Rose-50);
+    @apply p-6;
+  }
+
+  .info-box h3 {
+    @apply text-Rose-800 font-outfit text-2xl font-semibold mb-4;
+  }
+
+  .line {
+    @apply my-8 border-t border-Stone-150;
+  }
+
+  ul {
+    @apply list-disc pl-6 flex flex-col gap-2 font-outfit font-light;
+  }
+
+  li {
+    @apply pl-6 text-Stone-600;
+  }
+
+  li strong {
+    @apply font-semibold;
+  }
+}

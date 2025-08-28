@@ -1,0 +1,16 @@
+{
+  "name": "recipe-page-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Recipe page coding challenge](./preview.jpg)",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
